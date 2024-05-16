@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div id="app" style="height: 100vh">
+      <!-- Webamp will attempt to center itself within this div -->
+    </div>
+    <script src="https://unpkg.com/webamp@1.5.0/built/webamp.bundle.min.js"></script>
+    <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
+    <script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
+    <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+    <script>
+      const Webamp = window.Webamp;
+      const webamp = new Webamp({
+        // Optional. An array of objects representing skins.
+        // These will appear in the "Options" menu under "Skins".
+        // Note: These URLs must be served with the correct CORs headers.
+        //
+        // These will appear in the dropdown menu under "Skins".
+        availableSkins: [
+          {
+            url: "https://archive.org/cors/winampskin_Green-Dimension-V2/Green-Dimension-V2.wsz",
+            name: "Green Dimension V2",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_mac_os_x_1_5-aqua/mac_os_x_1_5-aqua.wsz",
+            name: "Mac OSX v1.5 (Aqua)",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_classic_mario/classic_mario.wsz",
+            name: "Classic Mario",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_nightcrawler_by_t_k/nightcrawler_by_t_k.wsz",
+            name: "Nightcrawler",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_Microchip_2_13/Microchip_2_13.wsz",
+            name: "Microchip_2_13",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_weezer2/weezer2.wsz",
+            name: "Weezer2",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_DeadZoNE_Skin_v2/DeadZoNE_Skin_v2.wsz",
+            name: "DeadZoNE Skin v2",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_cuteamp/cuteamp.wsz",
+            name: "Cuteamp",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_Tostie_Skin/Tostie_Skin.wsz",
+            name: "Tostie Skin",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_Homer_Simpson_Goes_3D/Homer_Simpson_Goes_3D.wsz",
+            name: "Homer Simpson Goes 3D",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_Moody_Blues_Amp_v3/Moody_Blues_Amp_v3.wsz",
+            name: "Moody Blues Amp v3",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_the_Cube_v2_by_Kuki/the_Cube_v2_by_Kuki.wsz",
+            name: "the Cube v2 by Kuki",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_iory_purple_flames_/iory_purple_flames_.wsz",
+            name: "iory purple flames ",
+          },
+          {
+            url: "https://archive.org/cors/winampskin_The_Powerpuff_girls_in_action_v_2/The_Powerpuff_girls_in_action_v_2.wsz",
+            name: "The Powerpuff girls in action v2",
+          },
+
+
+          
+        ],
+        showSkinsMenu: true,
+        initialTracks: [
+          {
+            metaData: {
+              artist: "Peace Cult",
+              title: "Liar, Liar",
+            },
+            // NOTE: Your audio file must be served from the same domain as your HTML
+            // file, or served with permissive CORS HTTP headers:
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/1.%20Peace%20Cult%20-%20Liar%2C%20Liar.mp3",
+            duration: 254,
+          },
+          {
+            metaData: {
+              artist: "Summer Hoop",
+              title: "Until It Stains",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/2.%20Summer%20Hoop%20-%20Until%20It%20Stains.mp3",
+
+            duration: 170,
+          },
+          {
+            metaData: {
+              artist: "Korine",
+              title: "Fate",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/3.%20Korine%20-%20Fate.mp3",
+
+            duration: 227,
+          },
+          {
+            metaData: {
+              artist: "Turnover",
+              title: "I Would Hate You",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/4.%20Turnover%20-%20I%20Would%20Hate%20You%20If%20I%20Could.mp3",
+
+            duration: 243,
+          },
+          {
+            metaData: {
+              artist: "Hovercar",
+              title: "Nylon",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/5.%20Hovercar%20-%20Nylon.mp3",
+
+            duration: 183,
+          },
+          {
+            metaData: {
+              artist: "Laverty",
+              title: "Such A Shame",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/6.%20Laverty%20-%20Such%20a%20Shame.mp3",
+
+            duration: 243,
+          },
+          {
+            metaData: {
+              artist: "Johnny Dynamite and the Bloodsuckers",
+              title: "Bats in the Woods",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/7.%20Johnny%20Dynamite%20&%20The%20Bloodsuckers%20-%20Bats%20In%20The%20Woods.mp3",
+
+            duration: 276,
+          },
+          {
+            metaData: {
+              artist: "CD Ghost",
+              title: "Undercurrent",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/8.%20CD%20Ghost%20-%20Undercurrent.mp3",
+
+            duration: 153,
+          },
+          {
+            metaData: {
+              artist: "Cameron Castan, Johnny Dynamite and the Bloodsuckers",
+              title: "Zodiac Killer",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/9.%20Zodiac%20Killer%20-%20Cameron%20Castan(feat.%20Johnny%20Dynamite%20and%20the%20Bloodsuckers).mp3",
+
+            duration: 183,
+          },
+          {
+            metaData: {
+              artist: "Korine",
+              title: "Captive",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/10.%20Korine%20-%20Captive.mp3",
+
+            duration: 252,
+          },
+          {
+            metaData: {
+              artist: "NIGHTBREAKERS",
+              title: "Quarter to Midnight",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/11.%20NIGHTBREAKERS%20-%20Quarter%20to%20Midnight.mp3",
+
+            duration: 171,
+          },
+          {
+            metaData: {
+              artist: "Small Pools",
+              title: "Night Shift",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/12.%20Smallpools%20-%20Night%20Shift.mp3",
+
+            duration: 199,
+          },
+          {
+            metaData: {
+              artist: "CD Ghost",
+              title: "Constellations",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/13.%20CD%20Ghost%20-%20Constellations.mp3",
+
+            duration: 198,
+          },
+          {
+            metaData: {
+              artist: "Nevertel",
+              title: "Sacrifice",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/14.%20Nevertel%20-%20Sacrifice.mp3",
+
+            duration: 167,
+          },
+          {
+            metaData: {
+              artist: "Summer Hoop",
+              title: "Think That You're Lonely",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/15.%20Summer%20Hoop%20-%20Think%20That%20You're%20Lonely.mp3",
+
+            duration: 206,
+          },
+          {
+            metaData: {
+              artist: "HADEE",
+              title: "HEAVEN//HELL",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/16.%20HADEE%20-%20HEAVEN//HELL.mp3",
+
+            duration: 215,
+          },
+          {
+            metaData: {
+              artist: "Peace Cult",
+              title: "Brainwashed",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/17.%20Peace%20Cult%20-%20Brainwashed.mp3",
+
+            duration: 174,
+          },
+          {
+            metaData: {
+              artist: "Persephone's Choice",
+              title: "Waterfall",
+            },
+            url: "https://cdn.jsdelivr.net/gh/phaedra-lemay/nightshift_playlist@latest/18.%20Persephone's%20Choice%20-%20Waterfall.mp3",
+
+            duration: 377,
+          },
+
+        ],
+        __butterchurnOptions: {
+          importButterchurn: () => Promise.resolve(window.butterchurn),
+          getPresets: () => {
+            const presets = window.butterchurnPresets.getPresets();
+            return Object.keys(presets).map((name) => {
+              return {
+                name,
+                butterchurnPresetObject: presets[name],
+              };
+            });
+          },
+          butterchurnOpen: true,
+        },
+        __initialWindowLayout: {
+          main: { position: { x: 0, y: 0 } },
+          equalizer: { position: { x: 0, y: 116 } },
+          playlist: { position: { x: 0, y: 232 }, size: [0, 4] },
+          milkdrop: { position: { x: 275, y: 0 }, size: [7, 12] },
+        },
+      });
+      webamp.renderWhenReady(document.getElementById("app"));
+    </script>
+  </body>
+</html>
