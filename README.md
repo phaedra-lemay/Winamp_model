@@ -20,3 +20,5 @@ Here's what each part of the link represents:
 	•	https://archive.org/cors/winampskin_: This is the base URL for the skin on archive.ord.
     •	SKINNAME: the name of the winamp skin. can be found on https://archive.org/details/winampskins?tab=collection search the collection for the skin you want and click on the skins to figure out their skin names you can use ot plug in to your url.
     i.e. for https://archive.org/details/winamp_skin_internet_archive the SKINNAME=skin_internet_archive
+
+for an example of what my playlist folder looks like with all my mp3s visit my playlist folder on github: https://github.com/phaedra-lemay/nightshift_playlist/tree/main#:~:text=Settings-,nightshift_playlist,-Public
