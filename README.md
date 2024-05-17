@@ -5,7 +5,7 @@ FUNCTIONAL replica of the old winamp interface that you can upload your own play
 <br />
 Download and double click this html and it will open on your browser.<br />
 <br />
-To replace the songs just (1)use YouTube to mp3 to convert your songs or use (https://spotify-downloader.com/) to download your spotify playlist and then after that (2)upload all your mp3 files onto GitHub (3) rewrite the urls in this format and replace the songs in the winamp.html with the songs you want:<br />
+To replace the songs just (1)use YouTube to mp3 to convert your songs and then after that (2)upload all your mp3 files onto GitHub (3) rewrite the urls in this format and replace the songs in the winamp.html with the songs you want:<br />
 <br />
 url: https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY@VERSION/path/to/your/file.mp3<br />
 Here's what each part of the link represents:<br />
