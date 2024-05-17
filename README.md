@@ -1,5 +1,7 @@
 # Winamp_model
- replica of the old winamp interface that you can upload your own playlists to!<br />
+FUNCTIONAL replica of the old winamp interface that you can upload your own playlists to!<br />
+<br />
+<img width="1492" alt="Screenshot 2024-05-16 at 5 58 49 PM" src="https://github.com/phaedra-lemay/Winamp_model/assets/142343420/1700253a-4ff9-4e65-bf0c-e4ab3acd18e0">
 <br />
 Download and double click this html and it will open on your browser.<br />
 <br />
