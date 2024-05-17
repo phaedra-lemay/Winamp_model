@@ -21,4 +21,6 @@ Here's what each part of the link represents:
     •	SKINNAME: the name of the winamp skin. can be found on https://archive.org/details/winampskins?tab=collection search the collection for the skin you want and click on the skins to figure out their skin names you can use ot plug in to your url.
     i.e. for https://archive.org/details/winamp_skin_internet_archive the SKINNAME=skin_internet_archive
 
+Another skin resource: https://skins.webamp.org/ ***keep in mind that not all these skin names will work because the url address is built to pull from archive.org so you must find the skin on archive.org as well and use the exact name used on archive.org. this website is just an easier way to look through all the available skins.***
+
 for an example of what my playlist folder looks like with all my mp3s visit my playlist folder on github: https://github.com/phaedra-lemay/nightshift_playlist/tree/main#:~:text=Settings-,nightshift_playlist,-Public
